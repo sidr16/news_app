@@ -7,7 +7,7 @@ class ThemeModeButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final themeModeNotifier = context.read<ThemeModeNotifier>();
+    final themeModeNotifier = context.watch<ThemeModeNotifier>();
 
     return IconButton(
       onPressed: themeModeNotifier.switchThemeMode,
